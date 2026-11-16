@@ -9,255 +9,131 @@
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #0f071f;
+            background-color: #0f172a;
             color: #ffffff;
-            scroll-behavior: smooth;
-        }
-        /* Mobile-friendly compact video container styling to prevent over-stretching */
-        .mobile-video-box {
-            width: 100%;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .clean-video {
-            width: 100%;
-            height: auto;
-            max-height: 320px;
-            object-fit: contain;
-            background-color: #000000;
-            border-radius: 0.75rem;
         }
     </style>
 </head>
-<body class="bg-[#0f071f] text-white min-h-screen">
-
-    <!-- Header / Navigation -->
-    <header class="border-b border-purple-900/40 bg-[#0f071f]/95 sticky top-0 z-50 backdrop-blur-md">
-        <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center gap-3">
-            <div class="flex items-center gap-3">
-                <img src="logo.jpg" alt="Logo" class="w-10 h-10 rounded-full object-cover border-2 border-amber-400 shadow-md">
-                <div>
-                    <h1 class="font-bold text-base text-amber-300 leading-tight">Suffer Se Safar Tak</h1>
-                    <p class="text-[11px] text-purple-300">Hosted by Rumjhum (Nidhi Verma)</p>
-                </div>
+<body class="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto space-y-8">
+        
+        <!-- Header Section -->
+        <header class="text-center space-y-3">
+            <div class="inline-block p-2 rounded-full bg-slate-800/80 border border-slate-700 shadow-xl mb-2">
+                <img src="logo.jpg" alt="Rumjhum Logo" class="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover mx-auto shadow-md">
             </div>
-            <!-- Navigation Links -->
-            <div class="flex items-center gap-3 flex-wrap justify-center text-xs">
-                <a href="#about" class="text-purple-200 hover:text-amber-300 transition-all">Meet Rumjhum</a>
-                <a href="#honors" class="text-purple-200 hover:text-amber-300 transition-all">Honors & Gallery</a>
-                <a href="#mediakit" class="text-purple-200 hover:text-amber-300 transition-all">Media Kit</a>
-                <a href="#episodes" class="text-purple-200 hover:text-amber-300 transition-all">Episodes & Live</a>
-                <a href="#faq" class="text-purple-200 hover:text-amber-300 transition-all">FAQ</a>
-                <a href="#booking-form" class="bg-amber-400 hover:bg-amber-300 text-purple-950 font-bold px-3.5 py-1.5 rounded-full transition-all shadow-lg">Book Guest Slot (₹149)</a>
-            </div>
-        </div>
-    </header>
+            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-300">
+                Suffer Se Safar Tak
+            </h1>
+            <p class="text-base sm:text-lg text-slate-300 font-medium">
+                Hosted by Rumjhum (Nidhi Verma)
+            </p>
+        </header>
 
-    <!-- Main Content Container -->
-    <main class="max-w-4xl mx-auto px-4 py-8 space-y-12">
-
-        <!-- 1. Hero Section -->
-        <section class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-gradient-to-b from-purple-900/35 to-purple-950/20 p-6 sm:p-8 rounded-3xl border border-purple-800/40 shadow-2xl">
-            <div class="md:col-span-7 space-y-4 text-center md:text-left">
-                <div class="inline-block px-3 py-1 rounded-full bg-amber-400/10 text-amber-300 border border-amber-400/25 text-xs font-semibold tracking-wide uppercase">
-                    Transforming Pain Into Purpose
-                </div>
-                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight leading-tight">
-                    Every Struggle Has a Story. <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-purple-400">Every Story Is a Journey.</span>
-                </h2>
-                <p class="text-purple-200 text-sm leading-relaxed">
-                    Welcome to Suffer Se Safar Tak. Join your host Rumjhum (Nidhi Verma) as she brings you profound, unedited stories of resilience, medical triumph, and the unbreakable human spirit—from every walk of life.
+        <!-- Main Card Container -->
+        <main class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-md space-y-8">
+            
+            <!-- Introduction / About -->
+            <section class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+                <p>
+                    Welcome to <strong class="text-white font-semibold">Suffer Se Safar Tak</strong>—a platform celebrating resilience, transformation, and inspiring journeys. Join us as we converse with extraordinary individuals who turned their struggles into stepping stones.
                 </p>
-                <div class="flex items-center gap-2 flex-wrap justify-center md:justify-start pt-2">
-                    <a href="https://www.instagram.com/nidhiverma1617/links/" target="_blank" class="text-xs bg-purple-900/60 hover:bg-purple-800 px-3 py-1.5 rounded-full border border-purple-700/50 transition-all">Show Instagram</a>
-                    <a href="https://www.instagram.com/suffersesafartak?rpxt=MW5mODdrZngzNzY4ZA%3D%3D&utm_source=qr" target="_blank" class="text-xs bg-purple-900/60 hover:bg-purple-800 px-3 py-1.5 rounded-full border border-purple-700/50 transition-all">Host Instagram (95k)</a>
-                    <a href="https://www.facebook.com/share/v/1E8XdBpydT/?mibextid=wwXIfr" target="_blank" class="text-xs bg-purple-900/60 hover:bg-purple-800 px-3 py-1.5 rounded-full border border-purple-700/50 transition-all">Facebook</a>
-                    <a href="http://www.youtube.com/@SufferseSafartak-u7r" target="_blank" class="text-xs bg-red-900/60 hover:bg-red-800 px-3 py-1.5 rounded-full border border-red-700/50 transition-all">YouTube Channel</a>
-                </div>
-                <div class="flex items-center gap-3 pt-3 justify-center md:justify-start">
-                    <a href="#episodes" class="bg-purple-900/70 hover:bg-purple-800 text-purple-200 font-medium px-4 py-2 rounded-xl text-xs transition-all border border-purple-700/50">Watch Episodes & Live</a>
-                    <a href="#mediakit" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-purple-950 font-bold px-4 py-2 rounded-xl text-xs transition-all shadow-md">Explore Media Kit & Sponsors</a>
-                </div>
-            </div>
-            <div class="md:col-span-5 flex flex-col items-center justify-center text-center">
-                <img src="rumjhum-portrait.jpg" alt="Rumjhum (Nidhi Verma)" class="w-44 h-44 sm:w-52 sm:h-52 rounded-full object-cover object-top border-4 border-amber-400 shadow-2xl bg-purple-950">
-                <h3 class="font-bold text-base text-amber-300 mt-3">Rumjhum (Nidhi Verma)</h3>
-                <p class="text-xs text-purple-300">Host & Visionary • 95k+ Community</p>
-            </div>
-        </section>
+            </section>
 
-        <!-- 2. Meet Rumjhum & Host Perspectives -->
-        <section id="about" class="space-y-6 bg-purple-950/30 border border-purple-900/50 rounded-3xl p-6 sm:p-8 shadow-xl">
-            <div class="text-center space-y-1">
-                <span class="text-[11px] font-bold text-amber-400 uppercase tracking-widest">Host & Visionary</span>
-                <h3 class="text-2xl font-bold text-amber-300">Meet Rumjhum (Nidhi Verma)</h3>
-                <p class="text-xs text-purple-200 max-w-xl mx-auto">Based in Mumbai, Rumjhum is a resilient Multiple Sclerosis (MS) warrior, model, entrepreneur, and empathetic broadcaster.</p>
-                <p class="text-xs text-amber-300/90 font-medium pt-1">rumjhumverma74@gmail.com | WhatsApp: +91 7039933719</p>
-            </div>
-
-            <div class="pt-2">
-                <h4 class="text-base font-bold text-amber-300 mb-4 border-b border-purple-900/50 pb-2">Host Perspectives & Journey</h4>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="bg-purple-900/25 p-4 rounded-2xl border border-purple-800/40 space-y-2">
-                        <h5 class="font-bold text-amber-300 text-sm">The Spark Behind the Mic</h5>
-                        <p class="text-xs text-purple-200 leading-relaxed">Personal loss and severe medical battles made me realize that life is too short—and that we are blessed with a purpose to bring out untold stories of people who have struggled and achieved small or big wins in any walk or field of life.</p>
-                    </div>
-                    <div class="bg-purple-900/25 p-4 rounded-2xl border border-purple-800/40 space-y-2">
-                        <h5 class="font-bold text-amber-300 text-sm">My Personal Journey of Resilience</h5>
-                        <p class="text-xs text-purple-200 leading-relaxed">Surviving a brain hemorrhage, a paralytic attack, walking with a stick, and undergoing chemotherapy alongside living with Multiple Sclerosis for over 16 years has taught me that physical challenges never define the limits of your spirit.</p>
-                    </div>
-                    <div class="bg-purple-900/25 p-4 rounded-2xl border border-purple-800/40 space-y-2">
-                        <h5 class="font-bold text-amber-300 text-sm">Defining Milestones & Achievements</h5>
-                        <p class="text-xs text-purple-200 leading-relaxed">From being felicitated by the Governor of Maharashtra and honored by the Delhi Management Association to earning the Shabash Nari title and winning Ms. Vibrant at Nari First, every recognition is a reminder of what resilience can achieve.</p>
-                    </div>
-                    <div class="bg-purple-900/25 p-4 rounded-2xl border border-purple-800/40 space-y-2">
-                        <h5 class="font-bold text-amber-300 text-sm">Championing Founders & Women Entrepreneurs</h5>
-                        <p class="text-xs text-purple-200 leading-relaxed">Through Suffer Se Safar Tak, I am looking for passionate founders, business owners, women entrepreneurs, and everyday achievers who have weathered real storms to build something meaningful—and are ready to inspire thousands with their authentic story.</p>
-                    </div>
-                    <div class="bg-purple-900/25 p-4 rounded-2xl border border-purple-800/40 space-y-2">
-                        <h5 class="font-bold text-amber-300 text-sm">A Lesson Learned the Hard Way</h5>
-                        <p class="text-xs text-purple-200 leading-relaxed">Life has tested me through immense personal loss, severe health battles including multiple sclerosis and a brain hemorrhage, and the hard realization that true healing comes entirely from within. No one walks your exact path for you. Today, I live for myself and for my truth—to be remembered simply as Rumjhum.</p>
-                    </div>
-                    <div class="bg-purple-900/25 p-4 rounded-2xl border border-purple-800/40 space-y-2">
-                        <h5 class="font-bold text-amber-300 text-sm">Message to Listeners & Creators</h5>
-                        <p class="text-xs text-purple-200 leading-relaxed">Never give up, no matter how heavy the storm gets. Remember, every founder has a story, and every startup has a journey. Keep going, because nothing is impossible when you choose to get up and make things happen.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. Personal Journey, Honors & Guest Features (Videos Placed on Top) -->
-        <section id="honors" class="space-y-6 bg-purple-950/40 border border-purple-900/50 rounded-3xl p-6 sm:p-8 shadow-xl">
-            <div class="text-center space-y-1 border-b border-purple-900/50 pb-4">
-                <h3 class="text-2xl font-bold text-amber-300">Personal Journey, Honors & Guest Features</h3>
-                <p class="text-xs text-purple-200">Watch Rumjhum's background, state honors, and podcast appearances.</p>
-            </div>
-
-            <!-- Compact, Mobile-Friendly Video Boxes for Introduction & Purple Dress Video -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-                <div class="mobile-video-box bg-black/60 border border-purple-800/50 rounded-2xl p-4 space-y-3 shadow-lg">
-                    <h4 class="font-semibold text-xs sm:text-sm text-amber-300 text-center">1. Introduction & Journey Overview</h4>
-                    <video controls preload="metadata" playsinline class="clean-video">
-                        <source src="video-1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+            <!-- Registration & Payment Section -->
+            <section class="border-t border-slate-800 pt-8 space-y-6">
+                <div class="space-y-2">
+                    <h2 class="text-xl sm:text-2xl font-bold text-sky-300">Book Guest Slot (₹149)</h2>
+                    <p class="text-sm text-slate-400">
+                        Fill out your details below and complete the ₹149 slot confirmation fee via UPI to secure your feature.
+                    </p>
                 </div>
 
-                <div class="mobile-video-box bg-black/60 border border-purple-800/50 rounded-2xl p-4 space-y-3 shadow-lg">
-                    <h4 class="font-semibold text-xs sm:text-sm text-amber-300 text-center">2. Special Felicitation & Recognition (Purple Dress)</h4>
-                    <video controls preload="metadata" playsinline class="clean-video">
-                        <source src="video-2.mov" type="video/quicktime">
-                        <source src="video-2.mov" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
+                <form id="registrationForm" onsubmit="handleSubmit(event)" class="space-y-5">
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-300 mb-1.5">Full Name <span class="text-rose-500">*</span></label>
+                        <input type="text" id="fullName" required placeholder="Enter your full name" 
+                            class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition text-sm sm:text-base">
+                    </div>
 
-            <!-- Awards Photo Gallery (3 Clean Columns) -->
-            <div class="pt-6 border-t border-purple-900/40 space-y-4">
-                <h4 class="text-lg font-bold text-amber-300">State Honors & Award Gallery</h4>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <div class="bg-black/50 p-3 rounded-2xl border border-purple-800/40 flex flex-col items-center">
-                        <div class="w-full h-48 flex items-center justify-center bg-black/40 rounded-xl overflow-hidden p-1">
-                            <img src="governor-award.jpg" alt="Governor Award" class="max-w-full max-h-full object-contain rounded-lg">
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-300 mb-1.5">WhatsApp Number <span class="text-rose-500">*</span></label>
+                        <input type="tel" id="whatsappNumber" required placeholder="e.g., +91 98765 43210" 
+                            class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition text-sm sm:text-base">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-300 mb-1.5">Email Address</label>
+                        <input type="email" id="email" placeholder="your.email@example.com" 
+                            class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition text-sm sm:text-base">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-300 mb-1.5">City & Profession / Venture</label>
+                        <input type="text" id="profession" placeholder="e.g., Mumbai | Founder & Author" 
+                            class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition text-sm sm:text-base">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-300 mb-1.5">UPI Transaction Reference No. / UTR</label>
+                        <input type="text" id="upiRef" placeholder="Enter 12-digit UPI reference number after payment" 
+                            class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition text-sm sm:text-base">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-300 mb-1.5">Brief Summary of Your Journey</label>
+                        <textarea id="journey" rows="3" placeholder="Share a few lines about your struggles and triumphs..." 
+                            class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition text-sm sm:text-base"></textarea>
+                    </div>
+
+                    <!-- Payment Box -->
+                    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5 text-center space-y-4">
+                        <h3 class="font-bold text-sky-400 text-base sm:text-lg">Scan & Pay ₹149</h3>
+                        <p class="text-xs sm:text-sm text-slate-400">Scan the QR code below using any UPI app (GPay, PhonePe, Paytm, BHIM) to make your payment.</p>
+                        
+                        <div class="flex justify-center my-3">
+                            <img src="qr_code.jpg" alt="Payment QR Code" class="w-48 h-48 sm:w-56 sm:h-56 object-contain rounded-xl border border-slate-800 bg-white p-2 shadow-inner">
                         </div>
-                        <p class="text-[11px] text-amber-300 text-center mt-2 font-medium">Governor of Maharashtra Felicitation</p>
+
+                        <p class="text-xs text-slate-400">
+                            Having trouble scanning? Pay directly to Rumjhum's WhatsApp number: <strong class="text-sky-300">+91 70399 33719</strong>
+                        </p>
                     </div>
-                    <div class="bg-black/50 p-3 rounded-2xl border border-purple-800/40 flex flex-col items-center">
-                        <div class="w-full h-48 flex items-center justify-center bg-black/40 rounded-xl overflow-hidden p-1">
-                            <img src="event-guest-1.jpg" alt="Event Guest 1" class="max-w-full max-h-full object-contain rounded-lg">
-                        </div>
-                        <p class="text-[11px] text-amber-300 text-center mt-2 font-medium">Special Event Appearance</p>
-                    </div>
-                    <div class="bg-black/50 p-3 rounded-2xl border border-purple-800/40 flex flex-col items-center">
-                        <div class="w-full h-48 flex items-center justify-center bg-black/40 rounded-xl overflow-hidden p-1">
-                            <img src="event-guest-2.jpg" alt="Event Guest 2" class="max-w-full max-h-full object-contain rounded-lg">
-                        </div>
-                        <p class="text-[11px] text-amber-300 text-center mt-2 font-medium">Show Recognition & Interaction</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Award Videos Grid (Compact & Uncropped) -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
-                <div class="mobile-video-box bg-black/50 border border-purple-800/50 rounded-2xl p-3 space-y-2">
-                    <h5 class="font-semibold text-xs text-purple-200 text-center">4. Governor of Maharashtra Felicitation Award</h5>
-                    <video controls preload="metadata" playsinline class="clean-video">
-                        <source src="governor-award-video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="mobile-video-box bg-black/50 border border-purple-800/50 rounded-2xl p-3 space-y-2">
-                    <h5 class="font-semibold text-xs text-purple-200 text-center">Shabash Nari Award & Recognition</h5>
-                    <video controls preload="metadata" playsinline class="clean-video">
-                        <source src="shabash nari-award.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="mobile-video-box bg-black/50 border border-purple-800/50 rounded-2xl p-3 space-y-2">
-                    <h5 class="font-semibold text-xs text-purple-200 text-center">Shabash Nari Special Talk</h5>
-                    <video controls preload="metadata" playsinline class="clean-video">
-                        <source src="shabash nari talk.MP4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </section>
+                    <button type="submit" class="w-full bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition transform active:scale-[0.99] text-base">
+                        Submit & Send Details to WhatsApp
+                    </button>
+                </form>
+            </section>
+        </main>
 
-        <!-- 4. Media Kit & Brand Collaborations -->
-        <section id="mediakit" class="space-y-6 bg-purple-950/30 border border-purple-900/50 rounded-3xl p-6 sm:p-8 shadow-xl">
-            <div class="text-center space-y-1 border-b border-purple-900/50 pb-3">
-                <span class="text-[11px] font-bold text-amber-400 uppercase tracking-widest">Partnerships & Credibility</span>
-                <h3 class="text-2xl font-bold text-amber-300">Sponsors & Brand Collaborations (Media Kit)</h3>
-                <p class="text-xs text-purple-200">Partnering with brands, sponsors, and leaders who champion resilience and empowerment.</p>
-            </div>
+        <!-- Footer -->
+        <footer class="text-center text-xs text-slate-500 py-4">
+            &copy; 2026 Suffer Se Safar Tak. All rights reserved.
+        </footer>
+    </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
-                <div class="bg-purple-900/25 p-5 rounded-2xl border border-purple-800/40 space-y-2">
-                    <div class="text-amber-400 font-bold text-lg">01</div>
-                    <h4 class="font-bold text-amber-300 text-sm">Governor Recognition</h4>
-                    <p class="text-xs text-purple-200 leading-relaxed">Felicitated by the Governor of Maharashtra for exceptional contributions to social resilience and community empowerment.</p>
-                </div>
-                <div class="bg-purple-900/25 p-5 rounded-2xl border border-purple-800/40 space-y-2">
-                    <div class="text-amber-400 font-bold text-lg">02</div>
-                    <h4 class="font-bold text-amber-300 text-sm">DMA & Leadership Honors</h4>
-                    <p class="text-xs text-purple-200 leading-relaxed">Honored by the Delhi Management Association (DMA) and awarded titles including Shabash Nari and Ms. Vibrant at Nari First.</p>
-                </div>
-                <div class="bg-purple-900/25 p-5 rounded-2xl border border-purple-800/40 space-y-2">
-                    <div class="text-amber-400 font-bold text-lg">03</div>
-                    <h4 class="font-bold text-amber-300 text-sm">Broadcasting Reach</h4>
-                    <p class="text-xs text-purple-200 leading-relaxed">Over 100+ raw, unedited stories broadcasted across YouTube, reaching a dedicated community of 95k+ followers and impact-driven audiences.</p>
-                </div>
-            </div>
-        </section>
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('fullName').value;
+            const whatsapp = document.getElementById('whatsappNumber').value;
+            const email = document.getElementById('email').value || 'Not provided';
+            const profession = document.getElementById('profession').value || 'Not provided';
+            const upi = document.getElementById('upiRef').value || 'Not provided';
+            const journey = document.getElementById('journey').value || 'Not provided';
 
-        <!-- 5. Episodes & Live Section -->
-        <section id="episodes" class="space-y-8">
-            <div class="border-b border-purple-900/50 pb-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-                <div>
-                    <h3 class="text-2xl font-bold text-amber-300">Episodes & Live Broadcasts</h3>
-                    <p class="text-xs text-purple-300 mt-1">Explore inspiring conversations, guest interviews, and real-life stories of resilience.</p>
-                </div>
-                <a href="http://www.youtube.com/@SufferseSafartak-u7r" target="_blank" class="bg-red-600 hover:bg-red-500 text-white font-bold px-4 py-2 rounded-full text-xs transition-all shadow-md">
-                    Visit YouTube Channel
-                </a>
-            </div>
+            const message = `*New Guest Slot Registration - Suffer Se Safar Tak*%0A%0A` +
+                            `*Full Name:* ${name}%0A` +
+                            `*WhatsApp:* ${whatsapp}%0A` +
+                            `*Email:* ${email}%0A` +
+                            `*Profession/City:* ${profession}%0A` +
+                            `*UPI Ref/UTR:* ${upi}%0A` +
+                            `*Journey Summary:* ${journey}`;
 
-            <!-- LIVE BROADCAST PLACEHOLDER SECTION -->
-            <div class="bg-gradient-to-r from-red-950/60 to-purple-950/60 border border-red-500/40 rounded-2xl p-4 sm:p-6 space-y-3 shadow-xl">
-                <div class="flex items-center justify-between flex-wrap gap-2">
-                    <div class="flex items-center gap-2">
-                        <span class="w-3 h-3 rounded-full bg-red-500 animate-ping"></span>
-                        <h4 class="font-bold text-sm sm:text-base text-red-300 uppercase tracking-wide">Live Broadcast & Latest Stream</h4>
-                    </div>
-                    <a href="http://www.youtube.com/@SufferseSafartak-u7r" target="_blank" class="text-[11px] bg-red-600 hover:bg-red-500 text-white font-bold px-3 py-1 rounded-full transition-all">Watch Live on YouTube</a>
-                </div>
-                <div class="relative w-full overflow-hidden rounded-xl aspect-video bg-black shadow-inner">
-                    <iframe class="w-full h-full absolute inset-0 border-0" src="https://www.youtube.com/embed/live_stream?channel=SufferseSafartak-u7r" title="Suffer Se Safar Tak Live Stream" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <p class="text-[11px] text-purple-200 text-center">Catch Rumjhum live as she broadcasts inspiring conversations and special interviews directly from Mumbai.</p>
-            </div>
-
-            <!-- Abhishek Vyas Podcast Feature -->
-            <div class="bg-purple-950/40 border border-purple-900/60 rounded-2xl p-4
+            const phoneNum = "917039933719";
+            window.open(`https://wa.me/${phoneNum}?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
