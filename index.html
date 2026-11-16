@@ -15,36 +15,72 @@
     </style>
 </head>
 <body class="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-3xl mx-auto space-y-8">
+    <div class="max-w-4xl mx-auto space-y-10">
         
         <!-- Header Section -->
-        <header class="text-center space-y-3">
+        <header class="text-center space-y-4">
             <div class="inline-block p-2 rounded-full bg-slate-800/80 border border-slate-700 shadow-xl mb-2">
-                <img src="logo.jpg" alt="Rumjhum Logo" class="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover mx-auto shadow-md">
+                <img src="logo.jpg" alt="Rumjhum Logo" class="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover mx-auto shadow-md">
             </div>
-            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-300">
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-300">
                 Suffer Se Safar Tak
             </h1>
-            <p class="text-base sm:text-lg text-slate-300 font-medium">
+            <p class="text-lg sm:text-xl text-slate-300 font-medium">
                 Hosted by Rumjhum (Nidhi Verma)
+            </p>
+            <p class="text-sm text-slate-400 max-w-xl mx-auto">
+                Celebrating resilience, transformation, and inspiring journeys from struggle to success.
             </p>
         </header>
 
-        <!-- Main Card Container -->
-        <main class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-md space-y-8">
+        <!-- Main Content Grid -->
+        <main class="space-y-10">
             
-            <!-- Introduction / About -->
-            <section class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
-                <p>
-                    Welcome to <strong class="text-white font-semibold">Suffer Se Safar Tak</strong>—a platform celebrating resilience, transformation, and inspiring journeys. Join us as we converse with extraordinary individuals who turned their struggles into stepping stones.
-                </p>
+            <!-- Featured Videos / Broadcast Section -->
+            <section class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl backdrop-blur-md space-y-6">
+                <h2 class="text-2xl font-bold text-sky-300 border-b border-slate-800 pb-3">Episodes & Live Broadcasts</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Video 1 -->
+                    <div class="space-y-2">
+                        <div class="aspect-video bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 shadow-inner flex items-center justify-center">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" title="Suffer Se Safar Tak Episode" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-sm font-semibold text-slate-300">Featured Conversation & Highlights</p>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="space-y-2">
+                        <div class="aspect-video bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 shadow-inner flex items-center justify-center">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" title="Suffer Se Safar Tak Episode" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-sm font-semibold text-slate-300">Inspirational Stories & Interviews</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Photo Gallery / Felicitations -->
+            <section class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl backdrop-blur-md space-y-6">
+                <h2 class="text-2xl font-bold text-sky-300 border-b border-slate-800 pb-3">Moments & Recognition</h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950">
+                        <img src="governor-award1.jpg" alt="Governor Recognition" class="w-full h-48 object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950">
+                        <img src="event-guest-1.jpg" alt="Event Guest" class="w-full h-48 object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950">
+                        <img src="event-guest-2.jpg" alt="Event Guest" class="w-full h-48 object-cover hover:scale-105 transition duration-300">
+                    </div>
+                </div>
             </section>
 
             <!-- Registration & Payment Section -->
-            <section class="border-t border-slate-800 pt-8 space-y-6">
+            <section class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-md space-y-8">
                 <div class="space-y-2">
-                    <h2 class="text-xl sm:text-2xl font-bold text-sky-300">Book Guest Slot (₹149)</h2>
-                    <p class="text-sm text-slate-400">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-sky-300">Book Guest Slot (₹149)</h2>
+                    <p class="text-sm sm:text-base text-slate-400">
                         Fill out your details below and complete the ₹149 slot confirmation fee via UPI to secure your feature.
                     </p>
                 </div>
@@ -87,9 +123,9 @@
                     </div>
 
                     <!-- Payment Box -->
-                    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5 text-center space-y-4">
-                        <h3 class="font-bold text-sky-400 text-base sm:text-lg">Scan & Pay ₹149</h3>
-                        <p class="text-xs sm:text-sm text-slate-400">Scan the QR code below using any UPI app (GPay, PhonePe, Paytm, BHIM) to make your payment.</p>
+                    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 text-center space-y-4">
+                        <h3 class="font-bold text-sky-400 text-lg">Scan & Pay ₹149</h3>
+                        <p class="text-sm text-slate-400">Scan the QR code below using any UPI app (GPay, PhonePe, Paytm, BHIM) to make your payment.</p>
                         
                         <div class="flex justify-center my-3">
                             <img src="qr_code.jpg" alt="Payment QR Code" class="w-48 h-48 sm:w-56 sm:h-56 object-contain rounded-xl border border-slate-800 bg-white p-2 shadow-inner">
@@ -100,7 +136,7 @@
                         </p>
                     </div>
 
-                    <button type="submit" class="w-full bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition transform active:scale-[0.99] text-base">
+                    <button type="submit" class="w-full bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-bold py-4 px-6 rounded-xl shadow-lg transition transform active:scale-[0.99] text-base">
                         Submit & Send Details to WhatsApp
                     </button>
                 </form>
@@ -108,8 +144,8 @@
         </main>
 
         <!-- Footer -->
-        <footer class="text-center text-xs text-slate-500 py-4">
-            &copy; 2026 Suffer Se Safar Tak. All rights reserved.
+        <footer class="text-center text-xs text-slate-500 py-6 border-t border-slate-800/80">
+            &copy; 2026 Suffer Se Safar Tak. All rights reserved. Hosted by Rumjhum (Nidhi Verma).
         </footer>
     </div>
 
